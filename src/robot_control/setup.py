@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'motor_control = robot_control.motor_control:mail',
-            'teleop_keyboard = robot_control.teleop_keyboard:mail',
+            'motor_control = robot_control.motor_control:main',
+            'teleop_keyboard = robot_control.teleop_keyboard:main',
         ],
     },
 )
