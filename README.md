@@ -1,5 +1,4 @@
 # ROS2 ExploRover
-## An Autonomous Raspberry Pi robot
 
 ### Description
 This repo is an experimental workspace for a small, autonomous rover I am building. The rover
