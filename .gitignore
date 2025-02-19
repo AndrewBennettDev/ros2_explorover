@@ -1,0 +1,7 @@
+# build directories
+build/
+install/
+log/
+
+# other standard directories/files
+.vscode
