@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import rclpy
-from rclply.node import Node
+from rclpy.node import Node
 from geometry_msgs.msg import Twist
 import serial
 import time
 
 # TODO: check port
-SERIAL_PORT = '/dev/ttyACM0'
+SERIAL_PORT = '/dev/ttyAMA0'
 BAUD_RATE= 9600
 
 class MotorControl(Node):
