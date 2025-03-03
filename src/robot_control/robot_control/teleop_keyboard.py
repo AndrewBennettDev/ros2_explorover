@@ -6,7 +6,6 @@ import sys
 import termios
 import tty
 
-# Instructions for keys:
 instructions = """
 Control Your Robot!
 ---------------------------
@@ -22,7 +21,6 @@ d - turn right
 q - quit
 """
 
-# Function to get keyboard input
 def get_key():
     tty.setraw(sys.stdin.fileno())
     key = sys.stdin.read(1)
@@ -61,7 +59,6 @@ class TeleopKeyboard(Node):
                 else:
                     continue
                 self.publisher_.publish(twist)
-                self.get_logger().debug(f"Published Twist: {twist}")
         except Exception as e:
             self.get_logger().error(f"Error: {e}")
 
